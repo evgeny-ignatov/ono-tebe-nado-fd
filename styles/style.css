@@ -51,8 +51,11 @@
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   padding: 165px 50px 50px;
+  margin-bottom: 180px;
+  /*добавил сюда нижний margin, а в селекторе .lots обнулил верхний padding,
+  чтобы лучше работала якорная ссылка*/
   background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
@@ -119,7 +122,7 @@
 }
 
 .lots {
-  padding: 180px 24px 154px;
+  padding: 0 24px 154px;
 }
 
 .lots__heading {
